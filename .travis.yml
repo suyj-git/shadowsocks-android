@@ -11,4 +11,4 @@ before_install:
     - chmod -R a+wrx .
 
 script:
-    - docker run --rm -v ${PWD}:/build circleci/android:api-28-ndk bash -c "cd /build; ./gradlew assembleDebug check; find . -iname *.apk"
+    - docker run --rm -v ${PWD}:/build circleci/android:api-28-ndk bash -c "cd /build; ./gradlew assembleDebug check; find . -iname *.apk;"
